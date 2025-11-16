@@ -1,0 +1,157 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
+header {
+    background: #50b3a2;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #50b3a2 3px solid;
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}   
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+}   
+button {
+    display: inline-block;
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: #cf3c14;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background: #50b3a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background: #429488;
+}
+h2 {
+    margin-bottom: 15px;
+    color: #50b3a2;
+}
+p {
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #e4e4e4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: #50b3a2 5px solid;
+}
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+a {
+    color: #50b3a2;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-left {
+    float: left;
+    margin-right: 15px;
+}
+.float-right {
+    float: right;
+    margin-left: 15px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .float-left, .float-right {
+        float: none;
+        margin: 0;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+    button, input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+    }
+}
