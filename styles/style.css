@@ -20,10 +20,11 @@ body {
 }
 header {
     background: #50b3a2;
-    color: #fff;
+    color: #5c5a5a;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #50b3a2 3px solid;
+
 }
 header h1 {
     text-align: center;
@@ -35,10 +36,12 @@ nav {
     margin-top: 10px;
     text-align: center;
     display: flex; 
+    flex-flow: row wrap;
     justify-content: space-between; 
     align-items: center; 
     padding: 10px; 
     background-color: #f0f0f0;
+    flex: 0,0,auto;
 }
 .logo {
     font-weight: bold; 
